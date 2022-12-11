@@ -111,10 +111,15 @@
                         Start Bootstrap
                     </div>
                 </nav>
+            </div>
+     
+            <div id="layoutSidenav_content">
+                <main>
 
-        <main class="py-4">
             @yield('content')
-        </main>
+                </main>
+ 
+      
 
         <footer class="py-4 bg-light mt-auto">
             <div class="container-fluid px-4">
@@ -129,7 +134,10 @@
             </div>
         </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-<script src="{{ url('/') }}/js/scripts.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="{{ url('/') }}/js/scripts.js"></script>
+        </div>
+    </div>
+    
 </body>
 </html>
