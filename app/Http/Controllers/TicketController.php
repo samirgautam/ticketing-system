@@ -35,7 +35,7 @@ class TicketController extends Controller
      */
     public function store(Request $request)
     {
-        //
+       
     }
 
     /**
@@ -46,7 +46,7 @@ class TicketController extends Controller
      */
     public function show(Ticket $ticket)
     {
-        //
+        return view('tickets.list');
     }
 
     /**
