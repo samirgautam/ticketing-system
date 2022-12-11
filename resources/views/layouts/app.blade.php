@@ -7,7 +7,9 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    {{-- <title>{{ config('app.name', 'Laravel') }}</title> --}}
+
+    <title>{{env('APP_NAME')}}</title>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -79,6 +81,14 @@
         <main class="py-4">
             @yield('content')
         </main>
+        <footer class="bg-light text-center text-white">
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+              © 2022 Copyright:
+              <a class="text-white" href="https://mawnepal.com/">Maw Enterprise</a>
+            </div>
+            <!-- Copyright -->
+          </footer>
     </div>
 </body>
 </html>
