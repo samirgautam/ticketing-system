@@ -1,4 +1,7 @@
 @extends('layouts.app')
+
+<link href="https://nightly.datatables.net/css/jquery.dataTables.css" rel="stylesheet" type="text/css" />
+
 @section('content')
     <div class="container">
         <div class="row">
@@ -53,4 +56,17 @@
             </div>
         </div>
     </div>
+@endsection
+@section('scripts')
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ckeditor/4.7.0/ckeditor.js" integrity="sha512-jg3ii+bW+/deIK/IieHmUiK8ReF0nh3grLkS4Zb4S6HdEke9fQNG/uiaAIp4nCvaACkZnBohAoHJ5uOf9spQfQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://nightly.datatables.net/js/jquery.dataTables.js"></script>
+       
+<script type="text/javascript">
+    $(document).ready(function() {
+       $('.ckeditor').ckeditor();
+    });
+</script>
+
 @endsection

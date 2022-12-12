@@ -78,7 +78,7 @@
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
                                     <a class="nav-link" href="{{ route('tickets.create') }}">Create Tickets</a>
-                                    <a class="nav-link" href="layout-sidenav-light.html">Show Tickets</a>
+                                    <a class="nav-link" href="{{route('tickets.index')}}">Show Tickets</a>
                                 </nav>
                             </div>
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
@@ -151,15 +151,11 @@
         </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/ckeditor/4.7.0/ckeditor.js" integrity="sha512-jg3ii+bW+/deIK/IieHmUiK8ReF0nh3grLkS4Zb4S6HdEke9fQNG/uiaAIp4nCvaACkZnBohAoHJ5uOf9spQfQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+       
         <script src="{{ url('/') }}/js/scripts.js"></script>
         </div>
     </div>
-<script type="text/javascript">
-    $(document).ready(function() {
-       $('.ckeditor').ckeditor();
-    });
-</script>
+
 </body>
 @yield('scripts')
 </html>
