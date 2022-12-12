@@ -3,6 +3,8 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use App\Models\User;
+use App\Models\Ticket;
 
 return new class extends Migration
 {
@@ -15,7 +17,7 @@ return new class extends Migration
     {
         Schema::create('comments', function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor(Tickets::class)->constrained();
+            $table->foreignIdFor(Ticket::class)->constrained();
             $table->string('comment');
             $table->foreignIdFor(User::class)->constrained();
             $table->timestamps();
