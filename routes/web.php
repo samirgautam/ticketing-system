@@ -1,5 +1,6 @@
 <?php
 
+
 use App\Http\Controllers\CommentController;
 use App\Http\Controllers\TicketController;
 use Illuminate\Support\Facades\Auth;
@@ -22,6 +23,10 @@ Auth::routes();
 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+ 
+//Route for tickets controllers
+Route::get('/tickets/create', [App\Http\Controllers\TicketController::class, 'create'])->name('create');
 
 Route::resource('comments', CommentController::class);
 
