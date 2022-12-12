@@ -5,7 +5,8 @@
             <div class="col-11">
                 <div class="card card-body shadow mt-3">
                   <h4 class="card-heading mb-3">Create Tickets</h4>
-                    <form class="row g-3">
+                    <form class="row g-3" action="{{ route('tickets.store') }}" method="POST">
+                      @csrf
                         <div class="col-md-4">
                             <label for="admin_staff" class="form-label">Admin/ Reseller/ Staff/ Users</label>
                           <select id="admin_staff" class="form-select" name="admin_staff">
