@@ -26,8 +26,9 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
  
 //Route for tickets controllers
-Route::get('/tickets/create', [App\Http\Controllers\TicketController::class, 'create'])->name('create');
+Route::resource('tickets', TicketController::class);
+//Route::get('/tickets/create', [App\Http\Controllers\TicketController::class, 'create'])->name('create');
 
 Route::resource('comments', CommentController::class);
 
-Route::get('/tickets/list', [TicketController::class, 'show'])->name('tickets.list');
+//Route::get('/tickets/list', [TicketController::class, 'show'])->name('tickets.list');

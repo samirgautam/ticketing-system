@@ -2,9 +2,9 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <div class="col-11 offset-1">
-                <div class="card card-body shadow">
-                  <h4 class="card-heading mb-3">Create</h4>
+            <div class="col-11">
+                <div class="card card-body shadow mt-3">
+                  <h4 class="card-heading mb-3">Create Tickets</h4>
                     <form class="row g-3">
                         <div class="col-md-4">
                             <label for="admin_staff" class="form-label">Admin/ Reseller/ Staff/ Users</label>
@@ -24,6 +24,7 @@
                             <label for="priority" class="form-label">Priority</label>
                             <select id="priority" class="form-select" name="priority">
                               <option selected>Low</option>
+                              <option>Medium</option>
                               <option>High</option>
                             </select>
                         </div>
@@ -37,9 +38,9 @@
                                 <textarea class="ckeditor form-control" name="description" placeholder="Write something here....."></textarea>
                             </div>
                         </div>
-                        <div class="col-md-12 d-flex justify-content-between">
+                        <div class="col-md-12 d-flex justify-content-between align-items-center">
                           <div class="form-check form-switch">
-                            <input class="form-check-input" type="checkbox" id="send_sms" checked>
+                            <input class="form-check-input" type="checkbox" id="send_sms">
                             <label class="form-check-label" for="send_sms">Send SMS</label>
                           </div>
                           <div class="form-group">
