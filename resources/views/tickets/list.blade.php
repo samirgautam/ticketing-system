@@ -13,10 +13,10 @@
     
   </div>
   <div class = "card mt-3">
-    <div class ="card-body">
+    <div class ="card-body shadow">
       <div class="row">
         <div class="col">
-          <p class="mb-0 mt-2"><i class="fa-solid fa-ticket"></i> All Tickets</p>
+        <p class="mb-0 mt-2"><i class="fa-solid fa-ticket"></i> All Tickets</p>
         </div>
         <div class="col">
           <div class="d-flex justify-content-md-end">
